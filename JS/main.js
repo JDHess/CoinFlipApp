@@ -58,7 +58,7 @@ function getCoinFace() {
         const randomDecimal = Math.random() * answer.length;
         const randomInteger = Math.floor(randomDecimal);
         result.textContent = answer[randomInteger];
-    }
+    } 
 }
 
 // ----

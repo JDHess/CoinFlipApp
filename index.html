@@ -10,12 +10,27 @@
     <script defer src="./JS/main.js"></script>
   </head>
   <body>
-    
-      <div class="background">
+
+      <div class="background d-flex justify-content-center row">
     <!--Background photo by Amelia Spink on Unsplash-->
         <div id="wrapper">
+          
 
-            <div id="coin-container">
+        <div id="stats-container">
+            <button id="reset-stats">RESET</button><br>
+            <div id="heads-stats">
+                <p>Yes <span id="heads-stat"> </span></p>
+            </div>
+            <div id="tails-stats">
+                    <p>No <span id="tails-stat"> </span></p>
+            </div>
+            
+            <div class="button-container">
+              <button id="flip">FLIP A COIN</button>
+          </div>
+        </div>
+
+            <div id="coin-container d-flex justify-content-center align-items-center">
                 <div class="d-flex justify-content-center align-items-center" id="coin">
                     <div class="d-flex justify-content-center align-items-center"id="heads"><i class="fa-brands fa-bitcoin fa-10x"></i></div>
                     <span class="d-flex justify-content-center align-items-center"id="tails"><i class="fa-brands fa-creative-commons-nc fa-10x"></i></span>
@@ -23,22 +38,15 @@
                 </div>
             </div>
 
-            <div id="button-container">
-                <p id="notification"><span id="result"></span></p>
-                <button id="flip">FLIP A COIN</button>
-            </div>
-
-            <div id="stats-container">
-                <div id="heads-stats">
-                    <p>Yes <span id="heads-stat"> </span></p>
-                </div>
-                <div id="tails-stats">
-                        <p>No <span id="tails-stat"> </span></p>
-                </div>
-                <button id="reset-stats">RESET</button>
-            </div>
-
+            
+          
+            
+            
         </div>
+        <div class="text-center"style="background-color: white; width: 100%;width:500px;height: 100px;">
+          <p id="notification"><span id="result"></span></p>
+        </div>
+        
       </div>
 
 
