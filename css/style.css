@@ -33,7 +33,7 @@ body {
   #coin-container { text-align:center; }
   #coin {
       width:300px;
-      height:200px;
+      height:170px;
       margin:auto;
       position:relative;
       top: 25px;
@@ -79,61 +79,54 @@ body {
     .sentence {
         font-size:1.50em;
     }
-  #notification {
-      margin-top:25px;
-      font-size:1.50em;
-      color:rgba(68,67,73,1);
-      opacity:0;
-      display: block;
-      
-  }
   
-  #result {
-      color:rgb(0, 0, 0);
-      display:block;
-  }
   
-  #flip {
-      margin:auto;
-      margin-top:25px;
-      padding:20px 50px;
-      background-color:rgba(255,251,89,1);
-      border-color:rgba(255,251,89,0.5);
-      color:rgb(0, 0, 0);
-      font-size:1em;
-      transition:0.3s;
-      letter-spacing:3px;
-  }
-  
-  #stats-container {
-      margin-top:20px;
-  }
-  
-  #heads-stats, #tails-stats {
-      display:inline-block;
-      width:45%;
-      background-color:rgba(240,240,240,1);
-      border:1px solid rgba(150,150,150,0.25);
-      border-bottom-width:3px;
-      border-radius:5px;
-      font-size:1em;
-      margin-top:20px;
-  }
-  
+  #reset-stats {
+    margin-top:-100px;
+    font-size:1em !important;
+    color:rgba(255,255,255,1);
+    background-color:rgba(68,67,73,1);
+    border-color:rgba(68,67,73,0.5);
+}
+#heads-stats, #tails-stats {
+    display:inline-block;
+    width:45%;
+    background-color:rgba(240,240,240,1);
+    border:1px solid rgba(150,150,150,0.25);
+    border-bottom-width:3px;
+    border-radius:5px;
+    font-size:1em;
+    margin-top:10px;
+}
   #heads-stat, #tails-stat { 
       display:block; 
       font-size:1em; 
       color:rgb(0, 0, 0);
       margin-top:10px;
   }
-  #reset-stats {
-      margin:auto;
-      font-size:1em !important;
-      color:rgba(255,255,255,1);
-      background-color:rgba(68,67,73,1);
-      border-color:rgba(68,67,73,0.5);
-  }
-  
+  #flip {
+    margin:auto;
+    margin-top:10px;
+    padding:20px 50px;
+    background-color:rgba(255,251,89,1);
+    border-color:rgba(255,251,89,0.5);
+    color:rgb(0, 0, 0);
+    font-size:1em;
+    transition:0.3s;
+    letter-spacing:3px;
+}
+#notification {
+    margin-top:25px;
+    font-size:1.50em;
+    color:rgba(68,67,73,1);
+    opacity:0;
+    display: block;
+    
+}
+#result {
+    color:rgb(0, 0, 0);
+    display:block;
+}
   /* -- Media Queries -- */
   @media screen and (max-width:1200px) {
       body { padding-bottom:50px; }
