@@ -3,7 +3,7 @@ body {
     background-color: black;
     padding: 0;
     margin:0;
-    overflow: hidden;
+    overflow-x: hidden;
 }
   .background {
     padding:50px 25px;
@@ -14,7 +14,7 @@ body {
     width: 100%;
     height: 550px;
     margin:0;
-    overflow: hidden;
+    overflow-x: hidden;
   }
   #flip, #reset-stats {
       letter-spacing:1px;
