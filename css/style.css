@@ -9,7 +9,7 @@ body {
     background-image: url(../img/coin.jpg);
     background-size: cover;
     width: 100%;
-    height: 575px;
+    height: 550px;
   }
   #flip, #reset-stats {
       letter-spacing:1px;
@@ -24,8 +24,7 @@ body {
   }
   
   #wrapper {
-      background-color:rbga(34,33,39,1) !important;
-      width:500px;
+      width:80%;
       padding:50px 50px;
       margin:auto;
       border:3px solid rgba(150,150,150,0.1);
