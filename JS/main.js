@@ -1,3 +1,7 @@
+// ----
+//MARK Decision entry section
+// ----
+
 const sendBtn = document.querySelector('#sendBtn');
 //variable that targets input element with id = 'messageIn'
 const messageIn = document.querySelector('#messageIn');
@@ -8,7 +12,7 @@ const messageOut = document.querySelector('#messageOut');
 sendBtn.addEventListener('click', sendMsg)
 //sendMsg function
 function sendMsg(){
-  //coolect value of messageIn 
+  //collect value of messageIn 
   //variable content will hold the value entered in input field
   //input field has an id = "messageIn"  
   let content = messageIn.value;
@@ -30,7 +34,9 @@ function sendMsg(){
     messageIn.value = '';
   }  
 }
-
+// ----
+//MARK coin flip function section
+// ----
 // ---- Variable Declarations
 const coin = document.querySelector("#coin");
 const coinHeads = document.querySelector("#heads");
@@ -45,7 +51,7 @@ const tailsStat = document.querySelector("#tails-stat");
 
 const resetStats = document.querySelector("#reset-stats");
 
-// ---- Setting initial stat displays
+// ---- Setting beginning stats
 headsStat.textContent = 0;
 tailsStat.textContent = 0;
 
@@ -55,7 +61,7 @@ function resetResult() {
     result.textContent = "";
 }
 
-// ---- Initiating a coin flip
+// ---- Starting a coin toss
 flipButton.addEventListener('click', function() {
     resetResult();
     coinHeads.style.opacity = "1";
@@ -68,8 +74,9 @@ flipButton.addEventListener('click', function() {
         getCoinFace();
     }, 1000);
 });
-
+// ----
 // ---- Determining the coin face
+// ----
 function getCoinFace() {
     notif.style.opacity = "1";
     let face = Math.random();
@@ -77,7 +84,10 @@ function getCoinFace() {
     let t  = parseInt(tailsStat.textContent);
     if ( face > 0.5 ) {
         headsStat.textContent = (h + 1);
-        //This array has all the answers
+        // ----
+        //This array has all the yes answers
+        //if yes function picks a yes answer at random
+        // ----
         const answer = ['Yes','Yeah','Absolutely!','DEFINENTLY!','Yes! Yes! Yes!','Afrikaans: Ja (Yes)','Arabic: نعم (Yes)','Armenian: Այո: (Yes)','Bengali: হ্যাঁ (Yes)','Bosnian: Ja (Yes)','Chinese: 对 (Yes)','Croatian: Da (Yes)','Czech: Ano (Yes)','Danish: Ja (Yes)','Dutch: Ja (Yes)','Esperanto: Jes (Yes)','Finnish: Kyllä (Yes)','French: Oui (Yes)','German: Ja (Yes)','Greek: Ναι (Yes)','Haitian Creole: Wi','Hausa: Eh (Yes)','Hindi: हाँ (Yes)','Hungarian: Igen (Yes)','Icelandic: Já (Yes)','Indonesian: Ya (Yes)','Italian: Sì (Yes)','Japanese: はい (Yes)','Korean: 예 (Yes)','Latvian: Jā','Macedonian: Да (Yes)','Malay: Ya (Yes)','Mongolian: тийм (Yes)','Nepali: हो/ (Yes)','Norwegian: Ja (Yes)','Polish: Tak (Yes)','Portuguese: Sim (Yes)','Punjabi: ਆਹੋ (Yes)','Quechua: Ari (Yes)','Romanian: Da (Yes)','Russian: да (Yes)','Serbian: Da (Yes)','Slovak: Áno','Spanish: Sí (Yes)','Swahili: Ndiyo (Yes)','Swedish: Ja (Yes)','Tamil: ஆம் (Yes)','Telugu: అవును (Yes)','Thai: ใช่ (Yes)','Turkish: Evet (Yes)','Vietnamese: Có (Yes)','Welsh: Ie (Yes)'];
 
         const randomDecimal = Math.random() * answer.length;
@@ -87,6 +97,10 @@ function getCoinFace() {
     } else {
         tailsStat.textContent = (t + 1);
         coinHeads.style.opacity = "0";
+        // ----
+        //This array has all the no answers
+        //if no function picks a no answer at random
+        // ----
         const answer = ['No', 'Absolutely Not','No! No! No!','Afrikaans: Nee (No)','Albanian: Jo (No)','Arabic: لا (No)','Armenian: Ոչ: (No)','Bengali: না (No)','Bosnian: Ne (No)','Chinese: 我再想想 (Let me think it over but probably No)','Croatian: Ne (No)','Czech: Ne (No)','Danish: Nej (No)','Dutch: Nee (No)','Esperanto: Ne (No)','Finnish: Ei (No)','French: Non (No)','German: Nein (No)','Greek: Όχι (No)','Haitian Creole: Non','Hausa: A’a (No)','Hindi: नहीं (No)','Hungarian: Nem (No)','Icelandic: Nei (No)','Indonesian: Tidak (No)','Italian: No','Japanese: いいえ (No)','Korean: 아니요 (No)','Latvian: Nē (No)','Macedonian: He (No)','Malay: Tidak (No)','Mongolian: үгүй (No)','Nepali: होइन (No)','Norwegian: Nei (No)','Polish: Nie (No)','Portuguese: Não (No)','Punjabi: ਨਹੀ (No)','Quechua: Mana (No)','Romanian: Nu (No)','Russian: Нет (No)','Serbian: Ne (No)','Slovak: Nie (No)','Spanish: No','Swahili: La (No)','Swedish: Nej (No)','Tamil: இல்லை (No)','Telugu: ఏ (No)','Thai: ไม่ใช่ (No)','Turkish: hayır (No)','Vietnamese: Không (No)','Welsh: Na (No)'];
         const randomDecimal = Math.random() * answer.length;
         const randomInteger = Math.floor(randomDecimal);
@@ -94,6 +108,8 @@ function getCoinFace() {
     } 
 }
 
+// ----
+// event listeners
 // ----
 resetStats.addEventListener('click', function() {
     headsStat.textContent = 0;
