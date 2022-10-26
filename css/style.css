@@ -12,7 +12,7 @@ body {
     background-image: url(../img/coin.jpg);
     background-size: cover;
     width: 100%;
-    height: 700px;
+    height: 750px;
     margin:0;
   }
   #flip, #reset-stats {
