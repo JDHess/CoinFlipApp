@@ -1,0 +1,50 @@
+<link href="popup.css" rel="stylesheet" type="text/css" />
+<script type="module" src="popup.js"></script>
+
+
+<div class="container">
+  <div>
+
+    <div class="title">Jadzia's Coin Toss</div>
+    <!--Question-->
+    <p style="color: white;">What will we be deciding today?</p>
+    <div>
+      <input type = "text" name="messageIn" id='messageIn' autocomplete="off">
+                  <button type ="button" id="sendBtn"> Ok </button>
+                  <button id="reset-stats">RESET</button>
+    </div>
+    <!--Stats-->
+    
+    
+    <br>
+    <div class="button-container">
+      <button id="flip"><strong>FLIP A COIN</strong></button>
+  </div>
+
+  <!--coin-->
+  <div id="coin-container">
+    <div class="sizecoin" id="coin">
+        <div class="yes"id="heads">Yes</div>
+        <span class="no"id="tails">No</span>
+        <!--<span class="d-flex justify-content-center align-items-center"id="tails"><i class="fa-solid fa-sack-dollar fa-7x"></i></span>-->
+    </div>
+  </div>
+  <!--Answer-->
+  <div style="display: flex;">
+    <div style="text-align: center;"id="heads-stats">  
+      <p>Yes<span id="heads-stat"> </span></p>
+    </div>
+    <div style="margin-left: 20px; text-align: center;"id="tails-stats">
+        <p>No <span id="tails-stat"> </span></p>
+    </div>
+  </div>
+  <br>
+    <div class="text-center" style=" background-color: white;border-radius:5px;  height: 500px; z-index: 1;">
+      <div class="text-center" style="text-align: center; position: absolute; width: 100%;">
+        <p id="messageOut" style="color:black; font-size: 20pt; margin-right: 10px;"> </p>
+        <p id="notification"><span id="result"></span></p>
+      </div>
+    </div>
+
+  </div>
+</div>
