@@ -1,7 +1,7 @@
 {
     "name": "Jadzia's Coin Flip",
     "version": "0.1.0",
-    "description": "Saving timestamps in YT videos",
+    "description": "Flip a coin. Have your answer translated into a random language.",
     "permissions": ["storage", "tabs"],
     "action": {
       "default_icon": {
